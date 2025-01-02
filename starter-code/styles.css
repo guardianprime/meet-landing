@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,19 @@
 }
 
 :root {
-
+  --CYAN-600: #4d96a9;
+  --CYAN-300: #8fe3f9;
+  --PURPLE-600: #855fb1;
+  --PURPLE-300: #d9b8ff;
+  --SLATE-900: #28283d;
+  --SLATE-600: #87879d;
+  --SLATE-300: #d1d1df;
+  --WHITE-900: #ffffff;
 }
 
 body {
   overflow-x: hidden;
+  font-family: "Red Hat Display", serif;
 }
 
 header {
@@ -47,9 +57,14 @@ main {
 
 .hero-section__description h1 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--SLATE-900);
   margin-bottom: 30px;
+}
+
+.hero-section__description p {
+  color: var(--SLATE-600);
 }
 
 .hero-section__btn-container {
@@ -58,25 +73,32 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  height: 18vh;
 }
 
 .hero-section__description button {
-  background-color: green;
-  color: white;
   font-size: 1.6rem;
   border: none;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 50px;
   font-family: inherit;
+  font-weight: 500;
 }
 
 .button-one {
-  width: 100%;
+  width: 70%;
+  background-color: var(--CYAN-600);
+  color: var(--WHITE-900);
+}
+
+.button-one span {
+  color: var(--CYAN-300);
 }
 
 .button-two {
   width: 50%;
+  background-color: var(--PURPLE-600);
+  color: var(--WHITE-900);
 }
 
 p {
@@ -85,6 +107,7 @@ p {
 
 .section-two {
   padding: 20px;
+  margin-top: 40px;
 }
 
 .design {
@@ -93,22 +116,27 @@ p {
   align-items: center;
   flex-direction: column;
   width: min-content;
-  margin: 0px auto;
+  margin: 0px auto 60px;
 }
 
 .line {
   height: 100px;
   width: 2px;
-  background-color: black;
+  background-color: var(--SLATE-300);
 }
 
 .circle {
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
+  width: 70px;
+  height: 70px;
+  border: 2px solid var(--SLATE-300);
   border-radius: 50%;
   display: grid;
   place-content: center;
+}
+
+.circle span {
+  color: var(--SLATE-600);
+  font-size: 1.3rem;
 }
 
 .section-two__img-container {
@@ -126,6 +154,28 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  color: var(--CYAN-600);
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+/* .section-two__text-div {
+  padding: 20px;
+} */
+
+.section-two__text-div p {
+  text-align: center;
+  color: var(--SLATE-600);
+}
+
 .section-two img {
   max-inline-size: 100%;
   block-size: auto;
@@ -138,7 +188,6 @@ footer {
   color: white;
   height: 40vh;
 }
-
 
 footer button {
   border: none;
