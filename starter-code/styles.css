@@ -250,5 +250,26 @@ footer p {
 
 /* STYLES FOR TABLET SCREENS */
 
-@media (min-width: 450px) {
+@media only screen and (min-width: 600px) {
+  .hero-section {
+    height: 75vh;
+    margin-top: 50px; 
+  }
+
+  .section-two__img-container {
+    height: max-content;
+  }
+}
+
+
+/* STYLES FOR DESKTOP AND LAPTOPS */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+/* FOR VERY LARGE LAPTOPS AND SCREENS */
+@media only screen and (min-width: 1200px) {
+
 }
