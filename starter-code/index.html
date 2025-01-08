@@ -20,12 +20,23 @@
       <section class="hero-section">
         <div class="hero-section__img-wrapper">
           <img
+            class="mobile__hero-image"
             width="50"
             height="50"
             src="./assets/desktop/image-hero-left.png"
             alt="group of smiling people profiles."
           />
+          <!--+++ IMG FOR TABLET SCREENS +++-->
           <img
+            src="./assets/tablet/image-hero.png"
+            height="50"
+            width="200"
+            alt="hero image of different people profiles"
+            class="tablet__hero-image"
+          />
+          <!-- +++++ -->
+          <img
+            class="mobile__hero-image"
             width="50"
             height="50"
             src="./assets/desktop/image-hero-right.png"
@@ -90,6 +101,8 @@
         <img
           src="./assets/mobile/image-footer.jpg"
           alt="woman listening to music"
+          scrset="./assets/tablet/image-footer.jpg 768w, ./assets/desktop/image-footer.jpg 1440w"
+          sizes="(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px"
         />
       </div>
     </footer>

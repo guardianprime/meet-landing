@@ -176,10 +176,6 @@ h2 {
   margin: 10px 0px 30px;
 }
 
-/* .section-two__text-div {
-  padding: 20px;
-} */
-
 .section-two__text-div p {
   text-align: center;
   color: var(--SLATE-600);
@@ -248,28 +244,78 @@ footer p {
   margin-top: 15px;
 }
 
+/* mobile style to prevent tablet hero image from showing */
+.tablet__hero-image {
+  display: none;
+}
+
 /* STYLES FOR TABLET SCREENS */
 
 @media only screen and (min-width: 600px) {
   .hero-section {
     height: 75vh;
-    margin-top: 50px; 
+    margin-top: 50px;
+  }
+
+  .hero-section img {
+    width: 100%;
+  }
+
+  .tablet__hero-image {
+    display: block;
+  }
+
+  .mobile__hero-image {
+    display: none;
+  }
+
+  .hero-section__description h1 {
+    font-size: 3.1rem;
+    margin: 0px auto 30px;
+    width: 50%;
+  }
+
+  .hero-section p {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .hero-section__btn-container {
+    flex-direction: row;
+    width: 70%;
+    margin: 30px auto 0px;
+  }
+
+  .button-one {
+    width: 45%;
   }
 
   .section-two__img-container {
     height: max-content;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0px 50px;
+    column-gap: 25px;
+  }
+
+  footer {
+    height: 30vh;
+  }
+
+  .footer__image-container {
+    height: 30vh;
+  }
+
+  .footer__image-container img {
+    object-fit: contain;
   }
 }
-
 
 /* STYLES FOR DESKTOP AND LAPTOPS */
 
 @media only screen and (min-width: 992px) {
-
 }
-
 
 /* FOR VERY LARGE LAPTOPS AND SCREENS */
 @media only screen and (min-width: 1200px) {
-
 }
