@@ -173,19 +173,19 @@ p {
   height: 40vh;
 }
 
-h4,
-h2 {
+h3,
+h4 {
   text-align: center;
 }
 
-h4 {
+h3 {
   color: var(--CYAN-600);
   font-weight: 800;
   font-size: 1.3rem;
   margin-top: 60px;
 }
 
-h2 {
+h4 {
   font-size: 2rem;
   font-weight: 900;
   line-height: 1;
