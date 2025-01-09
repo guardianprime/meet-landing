@@ -8,9 +8,11 @@
 
 :root {
   --CYAN-600: #4d96a9;
+  --CYAN-600-HOVER: #6ca8b7;
   --CYAN-TRANSPARENT: #4d97a99c;
   --CYAN-300: #8fe3f9;
   --PURPLE-600: #855fb1;
+  --PURPLE-600-HOVER: #86719e;
   --PURPLE-300: #d9b8ff;
   --SLATE-900: #28283d;
   --SLATE-600: #87879d;
@@ -107,6 +109,19 @@ main {
   width: 50%;
   background-color: var(--PURPLE-600);
   color: var(--WHITE-900);
+}
+
+/* HOVER STYLES */
+.button-one:hover,
+.button-one:focus {
+  background-color: var(--CYAN-600-HOVER);
+  cursor: pointer;
+}
+
+.button-two:hover,
+.button-two:focus {
+  background-color: var(--PURPLE-600-HOVER);
+  cursor: pointer;
 }
 
 p {
@@ -234,6 +249,12 @@ footer button {
   color: white;
 }
 
+footer button:hover,
+footer button:focus {
+  background-color: var(--PURPLE-600-HOVER);
+  cursor: pointer;
+}
+
 footer button span {
   color: var(--PURPLE-300);
 }
@@ -246,11 +267,41 @@ footer p {
   margin-top: 15px;
 }
 
+/* STYLES FOR VERY SMALL MOBILE SCREENS */
+@media only screen and (max-width: 380px) {
+  .hero-section__description button {
+    font-size: 1rem;
+  }
+
+  .hero-section__description h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section__description p {
+    font-size: 1rem;
+  }
+
+  .button-two {
+    margin: 20px 0px 0px;
+  }
+
+  footer .design {
+    left: 37vw;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer button {
+    font-size: 1rem;
+  }
+}
 /* STYLES FOR TABLET SCREENS */
 
 @media only screen and (min-width: 600px) {
   .hero-section {
-    height: 75vh;
+    height: 78vh;
     margin-top: 50px;
   }
 
@@ -262,8 +313,12 @@ footer p {
     height: 30vh;
   }
 
+  .hero-section__description {
+    margin-top: 30px;
+  }
+
   .hero-section__description h1 {
-    font-size: 3.1rem;
+    font-size: 2rem;
     margin: 0px auto 30px;
     width: 50%;
   }
@@ -293,6 +348,10 @@ footer p {
 
   footer {
     height: 30vh;
+  }
+
+  footer button {
+    font-size: 1rem;
   }
 
   .footer__image-container {
@@ -364,6 +423,10 @@ footer p {
     width: 100%;
   }
 
+  .section-two {
+    margin-top: 150px;
+  }
+
   footer {
     display: flex;
     padding: 100px 20px 50px;
@@ -386,12 +449,50 @@ footer p {
   }
 
   footer button {
+    font-size: 1rem;
     margin: 0px;
-    width: 300px;
-    height: 70px;
+    width: 200px;
+    height: 60px;
   }
 }
 
 /* FOR VERY LARGE LAPTOPS AND SCREENS */
 @media only screen and (min-width: 1200px) {
+  .hero-section__description {
+    width: 28%;
+  }
+
+  .section-two {
+    margin-top: 200px;
+  }
+
+  footer p {
+    width: 60%;
+  }
+
+  footer .design {
+    left: 48vw;
+  }
+}
+
+/* SPECIFIC STYLES FOR CERTAIN DEVICES */
+
+/* ipad pro */
+
+@media only screen and ((min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait)) {
+  .hero-section {
+    height: 40vh;
+  }
+
+  .section-two {
+    margin-top: 0px;
+  }
+
+  footer {
+    height: 28vh;
+  }
+
+  .footer__image-container {
+    height: 28vh;
+  }
 }
